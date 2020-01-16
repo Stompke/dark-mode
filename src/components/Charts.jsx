@@ -11,6 +11,7 @@ const Charts = ({ coinData }) => {
           <div className="coin__logo">
             <img src={coin.image} height="40" alt={coin.name} />
           </div>
+          <h2 className='coin_current_price'>${coin.current_price}</h2>
           <Chart sparklineData={coin.sparkline_in_7d.price} />
         </div>
       ))}
