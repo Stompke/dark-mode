@@ -16,7 +16,7 @@ const App = () => {
 
   useEffect(() => {
     axios
-    .get('https://api.coingecko.com/api/v3/exchanges/list')
+    .get('https://api.coingecko.com/api/v3/exchanges/list?per_page=10&page=1&sparkline=true')
     .then(res => {
       // console.log(res.data)
       setAllExchanges(res.data);
